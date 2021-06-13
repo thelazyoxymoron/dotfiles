@@ -143,6 +143,7 @@ command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! pdf llpp %c &
 command! feh feh -FZ %d --start-at %d/%c 2>/dev/null &
+command! foliate GDK_BACKEND=x11 foliate %f &
 
 "Temporarily disabling plocate as I'm happy with find for now"
 ""command! FZFlocate : set noquickview
@@ -198,10 +199,11 @@ filextype {*.epub},<application/epub>
         \ llpp %c &,
 
 " Mobi
-filextype {*.mobi},<application/mobi>
-        \ {View in foliate}
-        \ foliate %c &,
-
+" Disabling this temporarily as doesn't work with wayland natively yet"
+""filextype {*.mobi},<application/mobi>
+""        \ {View in foliate}
+""        \ GDK_BACKEND=x11 foliate %c &,
+""
 " PostScript
 filextype {*.ps,*.eps,*.ps.gz},<application/postscript>
         \ {View in zathura}
@@ -516,6 +518,10 @@ nnoremap <c-u> <c-w>x
 " Mappings for running vifm with FZF
 nnoremap <c-g> :FZFlocate<cr>
 nnoremap <c-f> :FZFfind<cr>
+
+" Temporarily mapping CTRL+i to open foliate with x11 backend"
+" See this issue: https://github.com/johnfactotum/foliate/issues/650"
+nnoremap <c-i> :foliate<cr>
 
 " ------------------------------------------------------------------------------
 
