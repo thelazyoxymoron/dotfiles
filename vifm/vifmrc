@@ -469,6 +469,11 @@ if has('win')
     nnoremap yp :!echo %"d:gs!\!/! %i | clip<cr>
     " Yank path to current file to Windows clipboard with forward slashes
     nnoremap yf :!echo %"c:gs!\!/! %i | clip<cr>
+elseif executable('wl-copy')
+    " Yank current directory path into the clipboard
+    nnoremap yd :!echo %d | wl-copy<cr>
+    " Yank current file path into the clipboard
+    nnoremap yf :!echo %c:p | wl-copy<cr>
 elseif executable('xclip')
     " Yank current directory path into the clipboard
     nnoremap yd :!echo %d | xclip %i<cr>
