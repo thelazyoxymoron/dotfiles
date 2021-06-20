@@ -144,6 +144,7 @@ command! reload :write | restart full
 command! pdf llpp %c &
 command! feh feh -FZ %d --start-at %d/%c 2>/dev/null &
 command! foliate GDK_BACKEND=x11 foliate %f &
+command! sox sox %f -n spectrogram &
 
 "Temporarily disabling plocate as I'm happy with find for now"
 ""command! FZFlocate : set noquickview

@@ -252,7 +252,7 @@ exec_always udiskie &
 
 #exec setwall set /home/mr_robot/Pictures/15.jpg -c sway
 #exec dwall -s aurora
-exec pulseeffects --gapplication-service &
+# exec pulseeffects --gapplication-service &
 
 exec /bin/bash /home/mr_robot/run_dwall.sh &
 
