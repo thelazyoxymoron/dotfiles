@@ -4,6 +4,7 @@ audiobooksDir="/home/mr_robot/Collection/MAM/Audiobooks/"
 graphicsDir="/home/mr_robot/Collection/MAM/Graphic-Novels/"
 ebooksDir="/home/mr_robot/Collection/MAM/Ebooks/"
 orpheusDir="/home/mr_robot/Collection/Orpheus-Downloads/"
+libbleDownloads="/home/mr_robot/Collection/Libble-Downloads/"
 
 tracker="$(transmission-remote -t $TR_TORRENT_ID -i | grep Magnet )"
 
@@ -24,5 +25,8 @@ if [[ "$tracker" == *"myanonamouse.net"* ]]; then
 elif [[ "$tracker" == *"orpheus"* ]]; then
     transmission-remote -t $TR_TORRENT_ID --labels [orpheus,trash]
     transmission-remote -t $TR_TORRENT_ID --move $orpheusDir
+elif [[ "$tracker" == *"libble"* ]]; then
+    transmission-remote -t $TR_TORRENT_ID --labels [libble]
+    transmission-remote -t $TR_TORRENT_ID --move $libbleDownloads
 fi
 
