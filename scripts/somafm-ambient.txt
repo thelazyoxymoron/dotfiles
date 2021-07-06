@@ -1,0 +1,7 @@
+Mission-control: https://somafm.com/missioncontrol130.pls
+Defcon: https://somafm.com/defcon256.pls
+Cliqhop: https://somafm.com/cliqhop256.pls
+DroneZone: https://somafm.com/dronezone256.pls
+Groove-Salad: https://somafm.com/groovesalad256.pls
+Secret-Agent: https://somafm.com/secretagent130.pls
+Deep-space-one: https://somafm.com/deepspaceone130.pls
