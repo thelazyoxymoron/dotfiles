@@ -16,6 +16,7 @@ alias videogame='/bin/bash /home/mr_robot/Music/scripts/video-game-ambient.sh'
 alias lofi='/bin/bash /home/mr_robot/Music/scripts/mpv-lofi-radio.sh'
 alias programming='/bin/bash /home/mr_robot/Music/scripts/music-for-programming.sh'
 alias somafm='/bin/bash /home/mr_robot/Music/scripts/somafm.sh'
+alias music='echo headphone, videogame, lofi, programming, somafm'
 
 PS1='[\u@\h \W]\$ '
 
