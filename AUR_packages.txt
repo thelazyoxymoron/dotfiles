@@ -1,0 +1,14 @@
+android-studio
+cava
+cmusfm
+nerd-fonts-jetbrains-mono
+nerd-fonts-noto
+nicotine-plus-git
+pomotroid-bin
+python-sentry_sdk
+python-yappi
+setwall-bin
+subtitleedit
+swayshot
+tribler
+youtube-dlp-bin
