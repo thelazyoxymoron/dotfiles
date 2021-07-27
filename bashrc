@@ -10,6 +10,12 @@ alias ls='ls --color=auto'
 # Enables floating point division
 alias bc='bc -l'
 
+# Don't use `sudo vim <filename>`
+# Instead set your $EDITOR variable and do
+# sudo -e <filename> or sudoedit <filename>
+# More here: https://www.reddit.com/r/linux/comments/osah05/ysk_do_not_use_sudo_vimnanoemacs_to_edit_a_file/
+export EDITOR=vim
+
 # Ambient music aliases
 alias headphone='/bin/bash /home/mr_robot/Music/scripts/headphone-commute-playlist.sh'
 alias videogame='/bin/bash /home/mr_robot/Music/scripts/video-game-ambient.sh'
